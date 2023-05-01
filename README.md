@@ -12,14 +12,14 @@ The code includes a script for training the model, which uses the pre-trained CN
 ## Usage
 To use the pre-trained model to detect fire hydrants in new images, run the 'Detector.py' script. The script takes an image file as input and outputs an  image with the detected hydrants in boundary boxes, their class and confidence level.
 
-## Installation
+## Installations
 Entire porject was developed in Hopper Cluster. So all the resources needed like TensorFlow, CUDA versions and CUDNN were installed in the cluster. 
 
 ## Training
-To train the model on the dataset, run the train_model.py script. The script takes the path to the dataset as input, and saves the trained model to a file.
+Both EfficientDet and Faster R-CNN models are trained on our dataset of manually annotated images with and without hydrants.
 
 ## Evaluation
-To evaluate the performance of the trained model on the test set, run the evaluate_model.py script. The script calculates the accuracy, precision, recall, and F1-score of the model.
+Created a confusion matrix which includes precision and recall of both the models, on comparing both the models, Faster R-CNN was identified as the suitable model for object detection.
 
 ## Conclusion
 Hydrant Object Detection is a useful tool for firefighters, city planners, and others who need to locate and map fire hydrants in their communities. The project report is well-documented and available here, making it accessible to anyone with an interest in deep learning and object detection.
