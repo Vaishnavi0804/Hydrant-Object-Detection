@@ -6,11 +6,14 @@ Hydrant Object Detection is a deep learning project that aims to detect and clas
 ## Dataset
 The project includes a dataset of street view images from the year 2018 to 2020 provided by the Virginia Department of Transportation (VDOT). CNN model was tested and trained on labelled data, where all the images with hydrants were manually annotated using CVAT annotation tool. The dataset includes images of fire hydrants from different angles, distances, and lighting conditions. The annotations include the bounding boxes and classes of the hydrants in each image.
 
+## Image Preprocessing
+Since this is an image data, data for EDA was parsed from the XML files after annotations into a dataframe. Additionally, images are cropped to a specific format to be ready for model training, this code is available in the 'Preprocessing_step.ipynb'.
+
 ## Model
 The code includes a script for training the model, which uses the pre-trained CNN model. The model architecture includes several convolutional and pooling layers, followed by several fully connected layers, and a softmax output layer.
 
 ## Usage
-To use the pre-trained model to detect fire hydrants in new images, run the 'Detector.py' script. The script takes an image file as input and outputs an  image with the detected hydrants in boundary boxes, their class and confidence level.
+To use the pre-trained model to detect fire hydrants in new images, run the 'Detector.ipynb' script. The script takes an image file as input and outputs an  image with the detected hydrants in boundary boxes, their class and confidence level.
 
 ## Installations
 Entire porject was developed in Hopper Cluster. So all the resources needed like TensorFlow, CUDA versions and CUDNN were installed in the cluster. 
