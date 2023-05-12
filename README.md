@@ -13,7 +13,7 @@ Since this is an image dataset, data for EDA was parsed from the XML files after
 The code includes a script for training the model, which uses the pre-trained CNN model. The model architecture includes several convolutional and pooling layers, followed by several fully connected layers, and a softmax output layer.
 
 ## Usage
-To use the pre-trained model to detect fire hydrants in new images, run the 'Model Training,testing & Evaluation 2.ipynb' script. The script takes an image file as input and outputs an image with the detected hydrants in boundary boxes along with their class and confidence level.
+To use the pre-trained model to detect fire hydrants in new images, run the 'Model training,testing & evaluation.ipynb' script. The script takes an image file as input and outputs an image with the detected hydrants in boundary boxes along with their class and confidence level.
 
 ## Installations
 Entire project was developed in Hopper Cluster. So all the resources needed like TensorFlow, CUDA versions and CUDNN were installed in the cluster. 
